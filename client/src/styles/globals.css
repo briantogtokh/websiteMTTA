@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --primary: #0E7490;
+  --primary-foreground: #ffffff;
+  --secondary: #1e293b;
+  --secondary-foreground: #f8fafc;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #F59E0B;
+  --accent-foreground: #1f2937;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #f8fafc;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #0E7490;
+  --radius: 0.5rem;
+}
+
+body {
+  @apply bg-slate-900 text-white;
+  font-family: 'Inter', sans-serif;
+  background-image:
+    radial-gradient(at 25% 25%, rgba(255,255,255,0.06), transparent 50%),
+    radial-gradient(at 75% 0%, rgba(255,255,255,0.04), transparent 50%);
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

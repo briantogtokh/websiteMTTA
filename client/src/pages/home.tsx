@@ -9,6 +9,7 @@ import { Users, Building, Trophy, Medal, Calendar, Award, ExternalLink } from "l
 import { Link } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import PageWithLoading from "@/components/PageWithLoading";
+import UpcomingTournaments from "@/components/upcoming-tournaments";
 
 // Type definitions for API responses
 interface SliderItem {
@@ -324,7 +325,15 @@ export default function Home() {
           </div>
         </div>
       )}
-      
+
+      {/* Upcoming Tournaments Section */}
+      <div className="py-8">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Ирэх тэмцээнүүд</h2>
+          <UpcomingTournaments />
+        </div>
+      </div>
+
       <div className="w-full px-4 sm:px-6 lg:px-8 py-8">
         {/* Welcome Section */}
         <div className="mb-8">
